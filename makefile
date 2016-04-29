@@ -10,13 +10,13 @@ stop:
 	docker stop $(IMAGE_NAME)
 
 clean: stop
-	docker rmi $(QNAME):local
+	docker rmi $(QNAME)
 
 build:
 	docker build -t $(GIT_TAG) .
 
 run:
-	docker rm local-dynamo-alpine
+	docker rm $(IMAGE_NAME)
 	docker run -d -p 8000:8000 --name=$(IMAGE_NAME) $(GIT_TAG)
 
 tag:
