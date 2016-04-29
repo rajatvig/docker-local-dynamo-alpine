@@ -21,7 +21,7 @@ run:
 
 tag:
 	docker tag $(GIT_TAG) $(BUILD_TAG)
-	docker tag $(LATEST_TAG) $(BUILD_TAG)
+	docker tag $(GIT_TAG) $(LATEST_TAG)
 
 login:
 	@docker login -u "$(DOCKER_USER)" -p "$(DOCKER_PASS)"
