@@ -24,7 +24,7 @@ tag:
 	docker tag $(GIT_TAG) $(LATEST_TAG)
 
 login:
-	@docker login -u "$(DOCKER_USER)" -p "$(DOCKER_PASS)"
+	@docker login -u "$(DOCKER_USER)" -p "$(DOCKER_PASS)" -e "$(DOCKER_EMAIL)"
 
 push: login
 	docker push $(GIT_TAG)
