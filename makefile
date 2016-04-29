@@ -12,7 +12,7 @@ stop:
 clean: stop
 	docker rmi $(QNAME):local
 
-build: stop
+build:
 	docker build -t $(QNAME):local .
 
 run:
