@@ -1,4 +1,4 @@
-![](https://circleci.com/gh/rajatvig/local-dynamo-alpine.svg?style=shield&circle-token=813d0fbd52a9d088e588984a0d52931ea4154ea9)
+[![Build Status](https://travis-ci.org/rajatvig/docker-local-dynamo-alpine.svg?branch=master)](https://travis-ci.org/rajatvig/docker-local-dynamo-alpine)
 [![](https://imagelayers.io/badge/rajatvig/local-dynamo-alpine:latest.svg)](https://imagelayers.io/?images=rajatvig/local-dynamo-alpine:latest 'Get your own badge on imagelayers.io')
 
 # Overview
